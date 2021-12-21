@@ -11,7 +11,7 @@ from pages.CreateAccountPage import CreateAccountPage
 import allure
 
 @pytest.mark.usefixtures('setup')
-class Test_Login:
+class Test_Sale:
     xl = pd.read_excel('FILEPATH\\Dane.xlsx', sheet_name="Arkusz1")
     baseURL = xl.at[0, 'Wartosc']
     productURL = xl.at[16, 'Wartosc']
